@@ -3,8 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 70;
 	objects = {
+
+/* Begin PBXBuildFile section */
+		0B5D23F32C5D5E6800AC2EBD /* SearchBarSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 0B5D23F22C5D5E6800AC2EBD /* SearchBarSwiftUI */; };
+		0B5D24052C5D600800AC2EBD /* SearchBarSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 0B5D24042C5D600800AC2EBD /* SearchBarSwiftUI */; };
+/* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		0B5D23D52C5D5E1D00AC2EBD /* PBXContainerItemProxy */ = {
@@ -40,6 +45,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B5D24052C5D600800AC2EBD /* SearchBarSwiftUI in Frameworks */,
+				0B5D23F32C5D5E6800AC2EBD /* SearchBarSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +107,8 @@
 			);
 			name = SearchBarSwiftUIUITesterApp;
 			packageProductDependencies = (
+				0B5D23F22C5D5E6800AC2EBD /* SearchBarSwiftUI */,
+				0B5D24042C5D600800AC2EBD /* SearchBarSwiftUI */,
 			);
 			productName = SearchBarSwiftUIUITesterApp;
 			productReference = 0B5D23C42C5D5E1900AC2EBD /* SearchBarSwiftUIUITesterApp.app */;
@@ -183,6 +192,9 @@
 				Base,
 			);
 			mainGroup = 0B5D23BB2C5D5E1900AC2EBD;
+			packageReferences = (
+				0B5D24032C5D600800AC2EBD /* XCLocalSwiftPackageReference "../../../Packages/search-bar-swiftui" */,
+			);
 			productRefGroup = 0B5D23C52C5D5E1900AC2EBD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -545,6 +557,24 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		0B5D24032C5D600800AC2EBD /* XCLocalSwiftPackageReference "../../../Packages/search-bar-swiftui" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../../../Packages/search-bar-swiftui";
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0B5D23F22C5D5E6800AC2EBD /* SearchBarSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SearchBarSwiftUI;
+		};
+		0B5D24042C5D600800AC2EBD /* SearchBarSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SearchBarSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0B5D23BC2C5D5E1900AC2EBD /* Project object */;
 }

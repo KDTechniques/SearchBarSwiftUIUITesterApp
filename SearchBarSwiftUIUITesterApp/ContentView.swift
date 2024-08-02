@@ -6,16 +6,22 @@
 //
 
 import SwiftUI
+import SearchBarSwiftUI
 
 struct ContentView: View {
+    
+    @State private var text: String = ""
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            SearchBarView(searchBarText: $text, placeholder: "Search", context: .navigation, customColors: nil)
+            
+            Text(text)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding()
         }
-        .padding()
+        .frame(maxHeight: .infinity, alignment: .top)
+        .padding(.top)
     }
 }
 
